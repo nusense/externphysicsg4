@@ -1,3 +1,14 @@
+# Editor backups
+*~
+*.bak
+*.swp
+*\#
+
+._*
+.Trashes
+.DS_Store
+.DS_Store?
+
 # Prerequisites
 *.d
 
