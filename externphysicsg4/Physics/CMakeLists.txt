@@ -1,11 +1,14 @@
 # this library should have _no_ art dependence, just Geant4 + pythia8 etc
 
-find_package(Geant4 REQUIRED)
-include(${Geant4_USE_FILE})
+#find_package(Geant4 REQUIRED)
+#include(${Geant4_USE_FILE})
+#
+#include_directories(${PROJECT_SOURCE_DIR}/include
+#                    ${Geant4_INCLUDE_DIR}
+#                    $ENV{PYTHIA8_INCLUDE_DIR})
 
-include_directories(${PROJECT_SOURCE_DIR}/include
-                    ${Geant4_INCLUDE_DIR}
-                    $ENV{PYTHIA8_INCLUDE_DIR})
+include_directories($ENV{GEANT4_FQ_DIR}/include/Geant4)
+include_directories($ENV{PYTHIA8_INC})
 
 find_library( PYTHIA8_LIBRARIES NAMES pythia8 PATHS $ENV{PYTHIA8_LIB} NO_DEFAULT_PATH )
 
