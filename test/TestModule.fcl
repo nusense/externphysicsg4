@@ -1,0 +1,39 @@
+#
+# * @file    TestModule_module.cc
+# * @brief   placeholder
+# * @author  Robert Hatcher (rhatcher@fnal.gov)
+# * @date    2020-04-29
+# * @version 1.0
+#
+# Description:
+#   A dummy test module for now
+#
+# Changes:
+#
+
+services: {
+  RandomNumberGenerator: {}
+  TimeTracker:           {}
+  MemoryTracker:         {}
+} # services
+
+
+source: {
+  module_type: EmptyEvent
+} # source
+
+
+physics: {
+
+  analyzers: {
+    aTest: {
+      module_type:  "TestModule"
+      module_label: "test"
+    }
+  } # analyzers
+
+  analysis: [ aTest ]
+
+  end_paths: [ analysis ]
+
+} # physics
