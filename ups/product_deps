@@ -9,8 +9,8 @@ fcldir  product_dir job
 product         version
 ##rwh -- no build only on nug4, so NOvA can also use this -- larsim          v08_22_01_01
 ## nug4 will get us Geant4 + root + art stuff though
-nug4            v1_05_00
-pythia8         v8_3_01
+nug4            v1_04_03
+pythia8         v8_3_02
 cetbuildtools   v7_15_01    -   only_for_build
 end_product_list
 
@@ -27,8 +27,8 @@ end_product_list
 #end_qualifier_list
 
 qualifier      nug4            pythia8
-e19:debug      e19:debug       e19:debug:hackp372
-e19:prof       e19:prof        e19:prof:hackp372
+e19:debug      e19:debug       e19:debug:p372
+e19:prof       e19:prof        e19:prof:p372
 end_qualifier_list
 
 # Preserve tabs and formatting in emacs and vi / vim:
