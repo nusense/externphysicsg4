@@ -53,7 +53,7 @@ void Py8DecayerPhysics::ConstructProcess()
       } 
 */    
       G4ProcessVector* processVector = pmanager->GetProcessList();
-      for ( size_t i=0; i<processVector->length(); ++i ) 
+      for ( size_t i=0; i < (size_t)processVector->length(); ++i ) 
       {    
          G4Decay* decay = dynamic_cast<G4Decay*>((*processVector)[i]);
          if ( decay ) 
