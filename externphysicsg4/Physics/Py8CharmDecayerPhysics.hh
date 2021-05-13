@@ -1,16 +1,16 @@
-#ifndef Py8DecayerPhysics_H
-#define Py8DecayerPhysics_H
+#ifndef Py8CharmDecayerPhysics_H
+#define Py8CharmDecayerPhysics_H
 
 #include "G4VPhysicsConstructor.hh"
 #include "globals.hh"
 
 class G4Decay;
 
-class Py8DecayerPhysics: public G4VPhysicsConstructor
+class Py8CharmDecayerPhysics: public G4VPhysicsConstructor
 {
   public:
-  Py8DecayerPhysics(G4int verb=1);
-    virtual ~Py8DecayerPhysics();
+  Py8CharmDecayerPhysics(G4int verb=1);
+    virtual ~Py8CharmDecayerPhysics();
 
   protected:
     // methods
@@ -23,9 +23,9 @@ class Py8DecayerPhysics: public G4VPhysicsConstructor
 /*
     // DO WE NEED TO IMPLEMENT THESE ?
     /// Not implemented
-    Py8DecayerPhysics(const Py8DecayerPhysics& right);
+    Py8CharmDecayerPhysics(const Py8CharmDecayerPhysics& right);
     /// Not implemented
-    Py8DecayerPhysics& operator=(const Py8DecayerPhysics& right);
+    Py8CharmDecayerPhysics& operator=(const Py8CharmDecayerPhysics& right);
 */
 
 };

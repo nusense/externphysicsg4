@@ -1,5 +1,5 @@
 
-#include "Py8DecayerPhysics.hh"
+#include "Py8TauDecayerPhysics.hh"
 #include "Py8Decayer.hh"
 
 #include <G4ParticleDefinition.hh>
@@ -10,26 +10,26 @@
 // factory
 #include "G4PhysicsConstructorFactory.hh"
 // register it with contructor factory
-G4_DECLARE_PHYSCONSTR_FACTORY(Py8DecayerPhysics);
+G4_DECLARE_PHYSCONSTR_FACTORY(Py8TauDecayerPhysics);
 
 
-Py8DecayerPhysics::Py8DecayerPhysics(G4int)
-  : G4VPhysicsConstructor("Py8DecayerPhysics")
+Py8TauDecayerPhysics::Py8TauDecayerPhysics(G4int)
+  : G4VPhysicsConstructor("Py8TauDecayerPhysics")
 {
 }
 
 //....oooOO0OOooo........oooOO0OOooo........oooOO0OOooo........oooOO0OOooo......
 
-Py8DecayerPhysics::~Py8DecayerPhysics() 
+Py8TauDecayerPhysics::~Py8TauDecayerPhysics() 
 {
 }
 
-void Py8DecayerPhysics::ConstructParticle()
+void Py8TauDecayerPhysics::ConstructParticle()
 {
    // Nothing needs to be done here
 }
 
-void Py8DecayerPhysics::ConstructProcess()
+void Py8TauDecayerPhysics::ConstructProcess()
 {
 
    // Loop over all particles instantiated and add external decayer
